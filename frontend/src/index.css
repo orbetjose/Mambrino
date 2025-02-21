@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import 'swiper/css';
+@import 'swiper/css/effect-fade';
+
+
+@font-face {
+  font-family: "BentonBold";
+  src: url("assets/fonts/BentonSans-Bold.otf");
+}
+@font-face {
+  font-family: "Benton";
+  src: url("assets/fonts/BentonSans-Book.otf");
+}
+@font-face {
+  font-family: "Acumin";
+  src: url("assets/fonts/AcuminVariableConcept.otf");
+}
+
+@theme {
+  --font-bentonbold: "BentonBold", sans-serif;
+  --font-benton: "Benton", sans-serif;
+  --font-acumin: "Acumin", sans-serif;
+
+  --color-dark-blue: #005184;
+  --color-blue: #092742;
+  --color-white-50: rgb(255 255 255 / .5);
+
+}

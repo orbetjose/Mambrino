@@ -35,7 +35,7 @@ export default function Home() {
 
     return (
         <section>
-            <div className="relative">
+            <div className="relative md:h-screen">
                 <SideBar
                     
                 />
@@ -54,7 +54,7 @@ export default function Home() {
                 >
                     {images[0]?.acf?.imagenes?.map((item, index) => (
                         <SwiperSlide key={index} className="">
-                            <img loading="lazy" className="min-h-[700px] h-auto md:h-screen md:min-h-auto w-full object-cover" src={isLargeScreen ? item.imagen.url : item.imagen_mobile.url} alt="" />
+                            <img loading="lazy" className="min-h-[700px] h-auto md:h-[100vh] 2xl:h-[95vh] md:min-h-auto w-full object-cover" src={isLargeScreen ? item.imagen.url : item.imagen_mobile.url} alt="" />
                         </SwiperSlide>
 
                     ))}
@@ -63,7 +63,7 @@ export default function Home() {
                     <a href="">POLÍTICAS DE PRIVACIDAD</a>
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSfzUWOG7n9asw0AyNhqRWZfs0ctLu1vGNGmlCWI57_rv2CqBQ/viewform">TRABAJA CON NOSOTROS</a>
                 </div>
-                <div className="relative md:absolute bottom-0 w-full bg-dark-blue py-4 md:pr-4 z-10 px-4 md:px-0">
+                <div className="relative w-full bg-dark-blue py-4 md:pr-4 z-10 px-4 md:px-0">
                     <p className="uppercase text-white text-xs font-benton text-center md:text-right tracking-widest px-4 md:px-0">DIRECCIÓN: AV. PARDO Y ALIAGA 652 PISO S1 SAN ISIDRO, LIMA - PERÚ | E-MAIL: INFO@RESTAURANTE.COM.PE TELÉFONO: (511) 412-0700</p>
                     <div className='flex justify-between text-white text-xs uppercase font-bentonbold pt-4 md:hidden'>
                         <span><a href="">POLÍTICAS DE PRIVACIDAD</a></span>

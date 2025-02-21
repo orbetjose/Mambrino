@@ -26,7 +26,7 @@ export default function SideBar() {
                             <img onClick={showRestaurants} className="h-5 mb-10 invert brightness-0 md:hidden hidden cross" src={`${domain}/wp-content/uploads/2025/02/cross-2.svg`} alt="" />
                         </div>
 
-                        <span className="font-acumin text-blue italic text-5xl leading-20 text-center md:text-xl px-8 block 2xl:text-2xl phrase  mx-auto md:w-auto">“Operando restaurantes desde 1982”</span>
+                        <span className="font-acumin text-blue italic text-5xl leading-20 md:leading-normal text-center md:text-xl px-8 block 2xl:text-2xl phrase  mx-auto md:w-auto">“Operando restaurantes desde 1982”</span>
                     </div>
                     <div className="">
                         <button

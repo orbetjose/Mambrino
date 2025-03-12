@@ -25,4 +25,5 @@
   --color-blue: #092742;
   --color-white-50: rgb(255 255 255 / .5);
 
+  --breakpoint-3xl: 1900px;
 }

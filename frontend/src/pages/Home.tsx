@@ -7,6 +7,7 @@ import SideBar from "../components/SideBar"
 
 export default function Home() {
 
+    const domain = import.meta.env.VITE_WP_DOMAIN
 
     const [images, setImages] = useState<CarouselHome[]>([])
     const [isLargeScreen, setIsLargeScreen] = useState(false)
@@ -60,14 +61,14 @@ export default function Home() {
                     ))}
                 </Swiper>
                 <div className="hidden md:flex gap-8 text-white font-bentonbold absolute top-4 right-4 text-xs tracking-widest uppercase z-10">
-                    <a href="">POLÍTICAS DE PRIVACIDAD</a>
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfzUWOG7n9asw0AyNhqRWZfs0ctLu1vGNGmlCWI57_rv2CqBQ/viewform">TRABAJA CON NOSOTROS</a>
+                    <a href={`${domain}/wp-content/uploads/2025/03/Politica-de-Tratamiento-de-Datos-Personales-2024.pdf`} target='_blank'>POLÍTICAS DE PRIVACIDAD</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfzUWOG7n9asw0AyNhqRWZfs0ctLu1vGNGmlCWI57_rv2CqBQ/viewform" target='_blank'>TRABAJA CON NOSOTROS</a>
                 </div>
                 <div className="relative w-full bg-dark-blue py-4 md:pr-4 z-10 px-4 md:px-0">
                     <p className="uppercase text-white text-xs font-benton text-center md:text-right tracking-widest px-4 md:px-0">DIRECCIÓN: AV. PARDO Y ALIAGA 652 PISO S1 SAN ISIDRO, LIMA - PERÚ | E-MAIL: INFO@RESTAURANTE.COM.PE TELÉFONO: (511) 412-0700</p>
                     <div className='flex justify-between text-white text-xs uppercase font-bentonbold pt-4 md:hidden'>
-                        <span><a href="">POLÍTICAS DE PRIVACIDAD</a></span>
-                        <span><a href="https://docs.google.com/forms/d/e/1FAIpQLSfzUWOG7n9asw0AyNhqRWZfs0ctLu1vGNGmlCWI57_rv2CqBQ/viewform">TRABAJA CON NOSOTROS</a></span>
+                        <span><a href={`${domain}/wp-content/uploads/2025/03/Politica-de-Tratamiento-de-Datos-Personales-2024.pdf`} target='_blank'>POLÍTICAS DE PRIVACIDAD</a></span>
+                        <span><a href="https://docs.google.com/forms/d/e/1FAIpQLSfzUWOG7n9asw0AyNhqRWZfs0ctLu1vGNGmlCWI57_rv2CqBQ/viewform" target='_blank'>TRABAJA CON NOSOTROS</a></span>
                     </div>
                 </div>
             </div>
